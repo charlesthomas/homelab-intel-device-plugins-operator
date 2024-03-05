@@ -10,7 +10,7 @@ resources:
 - resources/namespaces.yaml
 helmCharts:
 - name: intel-device-plugins-operator
-  namespace: intel
+  namespace: intel-device-plugins-operator
   releaseName: intel-device-plugins-operator
   repo: https://intel.github.io/helm-charts/
   valuesFile: helm/values.yaml

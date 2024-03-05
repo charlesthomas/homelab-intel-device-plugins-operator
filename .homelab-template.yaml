@@ -12,7 +12,7 @@ helmVersion: ''
 ingress: false
 labels: ''
 name: intel-device-plugins-operator
-namespace: intel
+namespace: intel-device-plugins-operator
 pvc: false
 reloader: false
 resources: []
