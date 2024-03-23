@@ -1,4 +1,4 @@
-_commit: v1.6.12-1-gd11d85a
+_commit: v1.8.1
 _src_path: /home/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
@@ -9,6 +9,9 @@ helmRelease: intel-device-plugins-operator
 helmRepo: https://intel.github.io/helm-charts/
 helmValues: helm/values.yaml
 helmVersion: ''
+homepageEnabled: true
+ingHost: intel-device-plugins-operator.crt.house
+ingName: intel-device-plugins-operator
 ingress: false
 labels: ''
 name: intel-device-plugins-operator

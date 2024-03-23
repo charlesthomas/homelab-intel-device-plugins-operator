@@ -8,6 +8,23 @@ commonAnnotations:
 
 resources:
 - resources/namespaces.yaml
+patches:
+- patch: |-
+    apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+      name: intel-device-plugins-operator
+      namespace: intel-device-plugins-operator
+      annotations:
+        gethomepage.dev/href: https://intel-device-plugins-operator.crt.house
+        gethomepage.dev/enabled: "true"
+        gethomepage.dev/description: 
+        gethomepage.dev/group: 
+        gethomepage.dev/icon: intel-device-plugins-operator
+        gethomepage.dev/name: intel-device-plugins-operator
+        gethomepage.dev/pod-selector: ""
+  target:
+    kind: Ingress
 helmCharts:
 - name: intel-device-plugins-operator
   namespace: intel-device-plugins-operator
