@@ -1,6 +1,6 @@
 _commit: v1.12.1-6-gbf0c0a5
 _src_path: /Users/crthomas/code/charlesthomas/homelab-template
-additionalResources: ''
+additionalResources: 'gpu-device-plugins.yaml,node-feature-rules.yaml'
 backups: false
 helm: true
 helmCrds: false
@@ -13,7 +13,7 @@ homepageEnabled: false
 ingress: false
 labels: ''
 name: intel-device-plugins-operator
-namespace: intel-device-plugins-operator
+namespace: intel-device-plugins
 pvc: false
 reloader: false
 resources: []

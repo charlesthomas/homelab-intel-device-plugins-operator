@@ -1,16 +1,19 @@
 ---
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: intel-device-plugins-operator
+namespace: intel-device-plugins
 
 commonAnnotations:
   repo: https://github.com/charlesthomas/homelab-intel-device-plugins-operator
 
 resources:
+- resources/gpu-device-plugin.yaml
 - resources/namespaces.yaml
+- resources/node-feature-rules.yaml
+
 helmCharts:
 - name: intel-device-plugins-operator
-  namespace: intel-device-plugins-operator
-  releaseName: intel-device-plugins-operator
+  namespace: intel-device-plugins
+  releaseName: intel-device-plugins
   repo: https://intel.github.io/helm-charts/
   valuesFile: helm/values.yaml
