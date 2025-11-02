@@ -27,4 +27,4 @@ helmCharts:
   releaseName: intel-device-plugins
   repo: https://intel.github.io/helm-charts/
   valuesFile: helm/values.yaml
-  version: 0.34.1
+  version: 0.34.0
