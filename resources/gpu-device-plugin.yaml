@@ -7,7 +7,6 @@ spec:
   image: "intel/intel-gpu-plugin:0.34.0"
   logLevel:  2
   sharedDevNum: 1
-  resourceManager: false
   enableMonitoring: true
   preferredAllocationPolicy: none
   nodeSelector:
