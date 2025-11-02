@@ -8,7 +8,7 @@ helmName: intel-device-plugins-operator
 helmRelease: intel-device-plugins-operator
 helmRepo: https://intel.github.io/helm-charts/
 helmValues: helm/values.yaml
-helmVersion: ''
+helmVersion: '0.34.1'
 homepageEnabled: false
 ingress: false
 labels: ''

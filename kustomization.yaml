@@ -7,6 +7,16 @@ commonAnnotations:
   repo: https://github.com/charlesthomas/homelab-intel-device-plugins-operator
 
 resources:
+- resources/crds/deviceplugin.intel.com_dlbdeviceplugins.yaml
+- resources/crds/deviceplugin.intel.com_dsadeviceplugins.yaml
+- resources/crds/deviceplugin.intel.com_fpgadeviceplugins.yaml
+- resources/crds/deviceplugin.intel.com_gpudeviceplugins.yaml
+- resources/crds/deviceplugin.intel.com_iaadeviceplugins.yaml
+- resources/crds/deviceplugin.intel.com_npudeviceplugins.yaml
+- resources/crds/deviceplugin.intel.com_qatdeviceplugins.yaml
+- resources/crds/deviceplugin.intel.com_sgxdeviceplugins.yaml
+- resources/crds/fpga.intel.com_acceleratorfunctions.yaml
+- resources/crds/fpga.intel.com_fpgaregions.yaml
 - resources/gpu-device-plugin.yaml
 - resources/namespaces.yaml
 - resources/node-feature-rules.yaml
@@ -17,3 +27,4 @@ helmCharts:
   releaseName: intel-device-plugins
   repo: https://intel.github.io/helm-charts/
   valuesFile: helm/values.yaml
+  version: 0.34.1
