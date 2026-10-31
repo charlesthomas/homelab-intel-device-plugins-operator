@@ -28,3 +28,11 @@ helmCharts:
   repo: https://intel.github.io/helm-charts/
   valuesFile: helm/values.yaml
   version: 0.34.0
+configMapGenerator:
+- name: grafana-dashboard-intel-device-plugins-operator
+  files:
+  - grafana/intel-device-plugins-operator.json
+  options:
+    disableNameSuffixHash: true
+    labels:
+      grafana_dashboard: "1"
